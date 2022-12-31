@@ -9,6 +9,7 @@
 <style>
 body {
   font-family: "Lucida Console", Monaco, monospace;
+  background: black;
 }
 .header {
   padding: 50px;
@@ -17,8 +18,10 @@ body {
   color: black;
 }
 .header h1 {
-  font-size: 40px;
+  font-size: 60px;
+  padding-top: 30px;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #4334eb;
@@ -31,7 +34,7 @@ body {
   text-decoration: none;
 }
 .navbar .h:hover {
-  background-color: darkgray;
+  background-color: gray;
   color: black;
 }
 .navbar a:hover {
@@ -39,9 +42,7 @@ body {
   color: black;
 }
 .navbar .h {
-  background-color: #4934eb;
-  color: black;
-  background: darkgray;
+  background: gray;
     padding: 14px 20px !important;
     border: none !important;
     color: white;
@@ -49,16 +50,24 @@ body {
 .main {
   text-align:center;
   padding:30px;
+  background: #373a40;
+  color: white;
+  padding-bottom:60px;
 }
+
+.main p {
+  padding-bottom: 30px;
+}
+
 .footer {
   padding:00px;
   text-align:center;
-  background:
+  background: black;
 }
 .fa {
   padding: 30px;
   font-size:30px;
-  width:30px;
+  width:50px;
   text-align:center;
   text-decoration:none;
   border-radius:50%;
@@ -75,43 +84,56 @@ body {
   background:#FF0000
   color:white;
 }
+
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
+}
+.row {
+
 }
 .row:after {
   content:"";
   display: table;
   clear: both;
 }
+
 </style>
   </head>
   <body>
-    <div class="header">
+    <div class = "header">
+    <div class = "row">
+    <div class = "column">
       <h1>Alvin Lai</h1>
       <p>Welcome to my Portfolio Page</p>
-  </div>
+    </div>
+     <div class = "column">
+       <img src="images/Screen Shot 2021-10-01 at 1.30.46 PM.png" alt="image of pig god" width="500" height="300">
+     </div>
+</div>
+</div>
   <div class="navbar">
     <a class="h" href="index.html">Home</a>
     <a href="mywork.html">My Work</a>
     <a href="contactme.html">Contact Me</a>
   </div>
-  <div class="main">
+  <div class = "main">
     <div class="row">
-      <div class="column"> <!--column 1-->
-        <h1>About Me</h1>
+      <div class = "column">
+      <h1>About Me</h1>
         <p>My name is Alvin Lai and I love coding</p>
       </div>
-    <img src="images/Screen Shot 2021-10-01 at 1.30.46 PM.png" alt="image of pig god" width="400" height="250">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/FqHmwcUJD6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="column">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/FqHmwcUJD6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+</div>
 </div>
   <div class="footer">
     <a href="https://www.linkedin.com/"target="_blank"class="fa fa-linkedin"></a>
     <a href="https://www.instagram.com/"target="_blank"class="fa fa-instagram"></a>
     <a href="https://www.youtube.com"target="_blank"class="fa fa-youtube"></a>
   </div>
+</div>
 
   </body>
 </html>
